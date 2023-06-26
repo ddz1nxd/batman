@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor Pro' , sans-serif;
+}
+ #logo{
+    width: 150px;
+    height: auto;
+}
+.titulo {
+    color:aliceblue;
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 60px;
+    text-decoration: underline white;
+}
+
+    .textarea {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-left:600px;
+        margin-top: 70px;
+        width: 700px;
+        height: 300px;
+        color:#fff;
+        font-size:25px;
+    }
+
+.button {
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    margin-left: 825px;
+    margin-top: 50px;
+    border-radius: 40px;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-color: white;
+}
+
+.button:hover {
+    border-color: red;
+    background-color:black;
+    color: white;
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'kdam thmor Pro' , sans-serif;
+    
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display:block;
+    }
+
+    nav {
+        display: none;
+    }
+    .textarea {
+        margin-left: 300px;
+        width: 160px;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        margin-left: 280px;
+    }
+}
